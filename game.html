@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Game </title>
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #222831;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 3%;
+            background-color: #1a242f;
+        }
+
+        #cont {
+            background-color: antiquewhite;
+        }
+
+        .logo {
+            cursor: pointer;
+            margin-right: auto;
+            width: 100px;
+            height: 80px;
+        }
+
+        .nav_links {
+            list-style: none;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 18px;
+        }
+
+        .nav_links li a {
+            transition: all 0.3s ease 0s;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav_links li a:hover {
+            color: #edf0f1ab;
+            font-size: 16px;
+        }
+
+        .sign {
+            padding: 9px 25px;
+            background-color: #007DBC;
+            border: none;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        .sign:hover {
+            background-color: #007dbc83;
+            color: rgba(255, 255, 255, 0.651);
+        }
+
+        .login {
+            background-color: transparent;
+            border: 2px solid #007DBC;
+            padding: 9px 25px;
+            color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+            margin-left: 20px;
+            font-size: 16px;
+
+        }
+
+        .login:hover {
+            background-color: #007dbc83;
+            color: rgba(255, 255, 255, 0.651);
+        }
+
+        #text {
+            letter-spacing: 2px;
+        }
+
+        #results {
+            list-style: none;
+        }
+
+        #last_btn {
+            margin-right: 25px;
+        }
+
+        input {
+            margin-left: 250px;
+            margin-bottom: 40px;
+            border: 1px solid dodgerblue;
+            transition: 300ms;
+        }
+
+        input:hover {
+            border: 3px solid dodgerblue;
+            line-height: 3;
+            transition: 300ms;
+            cursor: context-menu;
+        }
+
+        p:hover {
+            cursor: pointer;
+        }
+    </style>
+    <div class="mt-5">
+        <div class="text-white fw-bold text-center mt-5">
+            <h1 >Java Script Syntax Game</h1>
+            <h6>This game learn bigenners how write code and get used on Syntax of Javascript</h6>
+        </div>
+        <br>
+        <div id="cont" class="container rounded-3 w-75 p-4">
+            <div id="contchild" class="border border-dark border-1 p-3 rounded-3">
+                <div class="border border-dark border-1 p-3 rounded-3 fs-5 overflow-auto" id="text"></div><br>
+                <div> <input type="text" id="ini" class="bg-white rounded-3 w-50 p-4"></div><br>
+                <div id="btns">
+                    <ul id="results" class="d-flex justify-content-between">
+                        <li id="time">
+                            <p class="fw-bold"> Time Left : <span> <b>60</b></span> </p>
+                        </li>
+                        <li id="mis">
+                            <p class="fw-bold">Mistakes : <span> <b>0</b></span></p>
+
+                        </li>
+                        <li id="wpm">
+                            <p class="fw-bold">Correct :<span> <b>0</b></span> </p>
+
+                        </li>
+                        <button id="last_btn" class="btn btn-primary text-white " type="reset">Try Again</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
